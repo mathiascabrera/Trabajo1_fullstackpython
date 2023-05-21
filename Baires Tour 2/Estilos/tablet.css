@@ -47,3 +47,10 @@ nav a:hover{
 .pie_de_pagina p{
     font-size: 1.2rem;
 }
+/* Encomiendas */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 500px);
+    grid-gap: 10px;
+    justify-content: center;
+}

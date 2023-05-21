@@ -5,7 +5,8 @@
     padding:0px;
 }
 html{
-    font-size: 62.5%;
+    font-size: 65.5%;
+    /* font-size: 62.5%; */
     font-family: 'Roboto', sans-serif;
 }
 .container_body{
@@ -13,6 +14,7 @@ html{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(4, auto);
+    overflow-x: hidden;
 }
 .encabezado{
     background-color: black;
@@ -173,6 +175,74 @@ nav a:hover{
 	-webkit-animation: rotate-center 1s ease-in-out both;
 	animation: rotate-center 1s ease-in-out both;
 }
+
+/* Encomiendas inicio */
+.descripcion-form{
+    padding: 2rem 7rem;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.descripcion-form>p{
+    padding-top:8px;
+    border-top: 5px solid #2196F3;
+    text-align: justify;
+}
+
+form {
+    padding-top: 4rem;
+    font-size: 1.8rem;
+}
+  
+.form-group {
+    float: left;
+    margin-left: 1.5rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 400px);
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+select,
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.5rem;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn-primary {
+    background-color: #2196F3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.red {
+    color: red;
+    font-weight: bold;
+}
+/* Encomiendas fin */
 
 @-webkit-keyframes rotate-center {
     0% {

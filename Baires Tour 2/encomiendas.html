@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Estilos/style.css">
+    <link rel="stylesheet" href="./estilos/tablet.css" media="screen and (min-width:600px)">
+    <link rel="stylesheet" href="./estilos/desktop.css" media="screen and (min-width:800px)">
+    <title>Encomiendas</title>
+</head>
+
+<body class="container-form">
+    <header class="encabezado">
+        <picture>
+            <img class="float" src="./Logo/BairesTour.png" alt="Logo BairesTour">
+        </picture>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="">Boletería</a>
+            <a href="">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="menu">
+        <div class="descripcion-form">
+            <h1>Cotizar envío de encomienda</h1>
+            <p>El servicio de contraentrega tiene un costo adicional que no está incluido en esta cotización. 
+                Por favor, ten en cuenta que los campos marcados con (*) son obligatorios. Además, es importante destacar que
+                <strong>el límite de peso para esta cotización es de 100 kg por caja o paquete.</strong>
+                Si tu carga supera los 100 kg, te invitamos a comunicarte con nosotros a través de la sección de 
+                <strong>contacto.</strong>
+            </p>
+
+            <form class="grid-container">
+                <div class="form-group">
+                    <label for="productos">Productos:</label>
+                    <select name="productos" id="productos">
+                        <option value="">Selecciona una opción</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="origen">Origen:</label>
+                    <select name="origen" id="origen">
+                        <option value="">Selecciona una opción</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="destino">Destino:</label>
+                    <select name="destino" id="destino">
+                        <option value="">Selecciona una opción</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </div>
+                <!-- Pesos -->
+                <div class="form-group">
+                    <label for="peso">Peso (Kg):</label>
+                    <span class="red">*</span>
+                    <input type="number" min="0" max="100" name="peso" id="peso">
+                </div>
+
+                <div class="form-group">
+                    <label for="alto">Alto (cms):</label>
+                    <span class="red">*</span>
+                    <input type="number" min="0" name="alto" id="alto">
+                </div>
+                <div class="form-group">
+                    <label for="ancho">Ancho cms):</label>
+                    <span class="red">*</span>
+                    <input type="number"  min="0" name="ancho" id="ancho">
+                </div>
+                <div class="form-group">
+                    <label for="largo">Largo (cms):</label>
+                    <span class="red">*</span>
+                    <input type="number" min="0" name="largo" id="largo">
+                </div>
+
+                <div class="center">
+                    <button type="button" onclick="cotizar()" class="btn-primary">Calcular</button>
+                </div>
+
+                <div class="resultado">
+                    <p><strong class="total"></strong></p>                   
+                </div>
+
+                <div class="msg red" hidden>Por favor complete los campos requeridos, marcados con (*).</div>
+
+                <!-- </div> -->
+            </form>
+        </div>
+    </main>
+    <footer class="pie_de_pagina">
+        <h1>Contactanos en nuestras Redes Sociales</h1>
+        <section>
+            <picture>
+                <a href="https://www.instagram.com/accounts/login/"><img class="rotate-center" src="./Logo/instagram-logo.png" alt="Visitanos en Instagram"></a>
+                <a href="https://es-la.facebook.com/"><img class="rotate-center" src="./Logo/facebook-logo.png" alt="Visitanos en Facebook"></a>
+                <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D"><img class="rotate-center" src="./Logo/twitter-logo.png" alt="Visitanos en Twitter"></a>
+                <a href="https://web.whatsapp.com/"><img class="rotate-center" src="./Logo/whatsapp-logo.png" alt="Envianos un Whatsapp"></a>
+                <a href="https://www.gmail.com" ><img class="rotate-center" src="./Logo/gmail-logo.png" alt="Envianos un Correo"></a>
+            </picture>
+        </section>
+        <p>Mega Baires Tour ® - 2023</p>
+    </footer>
+    <script src="/js/encomiendas.js"></script>
+</body>
+
+</html>
