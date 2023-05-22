@@ -15,7 +15,7 @@
       href="./estilos/desktop.css"
       media="screen and (min-width:800px)"
     />
-    <title>Encomiendas</title>
+    <title>Mega Baires Tour - Contacto</title>
   </head>
 
   <body class="container-form">
@@ -32,73 +32,72 @@
 
     <main class="menu">
       <div class="descripcion-form">
-        <h1>Cotizar envío de encomienda</h1>
+        <h1>Contacto</h1>
         <p>
-          El servicio de contraentrega tiene un costo adicional que no está
-          incluido en esta cotización. Por favor, ten en cuenta que los campos
-          marcados con (*) son obligatorios. Además, es importante destacar que
-          <strong
-            >el límite de peso para esta cotización es de 100 kg por caja o
-            paquete.</strong
-          >
-          Si tu carga supera los 100 kg, te invitamos a comunicarte con nosotros
-          a través de la sección de
-          <strong>contacto.</strong>
+          Estamos para escucharte y acompañarte, por favor, déjanos tus datos y
+          tu consulta que nos pondremos en contacto con vos
+          <strong>al correo indicado</strong>
+          en hasta 24 horas hábiles
         </p>
 
+        <!-- Personal details -->
         <form class="grid-container">
           <div class="form-group">
-            <label for="productos">Productos:</label>
-            <select name="productos" id="productos">
-              <option value="">Selecciona una opción</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="origen">Origen:</label>
-            <select name="origen" id="origen">
-              <option value="">Selecciona una opción</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="destino">Destino:</label>
-            <select name="destino" id="destino">
-              <option value="">Selecciona una opción</option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-            </select>
-          </div>
-          <!-- Pesos -->
-          <div class="form-group">
-            <label for="peso">Peso (Kg):</label>
+            <label for="name">Nombre</label>
             <span class="red">*</span>
-            <input type="number" min="0" max="100" name="peso" id="peso" />
+            <input
+              type="text"
+              min="0"
+              max="100"
+              name="name"
+              id="name"
+              required
+            />
           </div>
 
           <div class="form-group">
-            <label for="alto">Alto (cms):</label>
+            <label for="lastName">Apellido:</label>
             <span class="red">*</span>
-            <input type="number" min="0" name="alto" id="alto" />
+            <input
+              type="text"
+              min="0"
+              max="100"
+              name="lastName"
+              id="lastName"
+              required
+            />
           </div>
           <div class="form-group">
-            <label for="ancho">Ancho cms):</label>
+            <label for="dni">DNI:</label>
             <span class="red">*</span>
-            <input type="number" min="0" name="ancho" id="ancho" />
+            <input type="number" min="9" name="dni" id="dni" required />
           </div>
           <div class="form-group">
-            <label for="largo">Largo (cms):</label>
+            <label for="email">Email:</label>
             <span class="red">*</span>
-            <input type="number" min="0" name="largo" id="largo" />
+            <input type="email" min="5" name="email" id="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje:</label>
+            <span class="red">*</span>
+            <textarea
+              min="0"
+              name="message"
+              id="message"
+              rows="4"
+              cols="50"
+              required
+            ></textarea>
           </div>
 
           <div class="center">
-            <button type="button" onclick="cotizar()" class="btn-primary">
-              Calcular
+            <button type="button" onclick="SendEmail()" class="btn-primary">
+              Enviar
             </button>
           </div>
 
           <div class="resultado">
-            <p><strong class="total"></strong></p>
+            <p><strong class="success"></strong></p>
           </div>
 
           <div class="msg red" hidden>
@@ -148,6 +147,6 @@
       </section>
       <p>Mega Baires Tour ® - 2023</p>
     </footer>
-    <script src="./js/encomiendas.js"></script>
+    <script src="./js/contacto.js"></script>
   </body>
 </html>
