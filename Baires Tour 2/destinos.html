@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./Estilos/style.css" />
+  <link
+    rel="stylesheet"
+    href="./estilos/tablet.css"
+    media="screen and (min-width:600px)"
+  />
+  <link
+    rel="stylesheet"
+    href="./estilos/desktop.css"
+    media="screen and (min-width:800px)"
+  />
+  <title>Mega Baires Tour</title>
+  <style>
+    #contenedor-imagenes {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: minmax(100px, auto);
+      gap: 10px;
+      justify-items: center;
+      max-width: 1200px;
+      margin: 20px auto;
+    }
+    section {
+	margin: 50px 0;
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	grid-auto-rows: minmax(100px, auto);
+	gap: 20px;
+	justify-content: center;
+	max-width: 1200px;
+}
+
+section img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	max-width: 100%;
+}
+    #contenedor-imagenes img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    #slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  #slider img {
+    flex: 0 0 auto;
+    width: 100%;
+    scroll-snap-align: start;
+  }
+  </style>
+</head>
+<body class="container_body2">
+  <header class="encabezado">
+    <picture>
+      <img class="float" src="./Logo/BairesTour.png" alt="Logo BairesTour" />
+    </picture>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="encomiendas.html">Encomiendas</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="menu">
+    <div class="descripcion-form">
+      <h1>DESTINOS</h1>
+      <p>
+        Bienvenidos a nuestro sitio web. Aquí encontrarás toda la información necesaria sobre nuestros tours por este hermoso país como lo es Argentina.
+        <strong>¡Qué estás esperando!</strong>
+        Entra ya y descubre lo que tiene por ofrecerte cada uno de estos lugares,
+        <strong>te aseguro no te arrepentirás</strong>
+      </p>
+    </div>
+        
+          <div id="contenedor-imagenes">
+            <img src="https://one.cdnmega.com/images/viajes/covers/buenos-aires-a-su-medida-1024x575_63a24c4820c45.webp">
+            <img src="https://ventanadelnorte.com/wp-content/uploads/2020/09/multimedia.normal.870d58ecc9de82a0.494d472d32303139313230332d5741303033345f6e6f726d616c2e6a7067.jpg">
+            <img src="https://gentilicios.de/wp-content/uploads/chaco-min.png">
+            <img src="https://chubutpatagonia.gob.ar/wp-content/uploads/2019/09/BALLE-013.jpg">
+            <img src="https://i.ytimg.com/vi/FtD7hBacnTo/maxresdefault.jpg">
+            <img src="https://pxc.cdn.ellitoral.com.ar/litoral/012020/1579403690965.jpg">
+            <img src="https://i.ytimg.com/vi/AxN0TkorWFU/maxresdefault.jpg ">
+            <img src="https://agenfor.com.ar/wp-content/uploads/2019/12/Portada-1.png">
+            <img src="https://i.ytimg.com/vi/Fh15x7BkvJ4/maxresdefault.jpg">
+            <img src="https://gentilicios.de/wp-content/uploads/2020/10/la-pampa-min.png">
+            <img src="https://gentilicios.de/wp-content/uploads/la-rioja.png">
+            <img src="https://i.ytimg.com/vi/v5H9V7ZaJVE/maxresdefault.jpg">
+            <img src="https://misiones.gob.ar/wp-content/uploads/2022/10/web-portada.jpg">
+            <img src="https://volemos.nyc3.cdn.digitaloceanspaces.com/img/ciudades/social/neuquen.jpg">
+            <img src="https://i.ytimg.com/vi/0uKhaNnm914/maxresdefault.jpg">
+            <img src="https://i.ytimg.com/vi/wxCNnAuvO8I/maxresdefault.jpg">
+            <img src="https://i.ytimg.com/vi/UhXwtmuuiQs/maxresdefault.jpg">
+            <img src="https://i.ytimg.com/vi/PFEXmdZacP4/maxresdefault.jpg">
+            <img src="https://laprensadesantacruz.info/wp-content/uploads/2021/07/turismo.jpg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Santa_Fe%2C_Argentina_2019_%28letras%29.jpg">
+            <img src="https://gentilicios.de/wp-content/uploads/2020/10/santiago-del-esterp-min.png">
+            <img src="https://i.ytimg.com/vi/Iu9sYWxMOGU/maxresdefault.jpg">
+            <img src="https://i.ytimg.com/vi/Jfef6b9g0uk/maxresdefault.jpg">
+          </div>
+
+<!-- Slider de imágenes -->
+<div id="slider">
+    <img src="https://one.cdnmega.com/images/viajes/covers/buenos-aires-a-su-medida-1024x575_63a24c4820c45.webp">
+            <img src="https://ventanadelnorte.com/wp-content/uploads/2020/09/multimedia.normal.870d58ecc9de82a0.494d472d32303139313230332d5741303033345f6e6f726d616c2e6a7067.jpg">
+            <img src="https://gentilicios.de/wp-content/uploads/chaco-min.png">
+            <img src="https://chubutpatagonia.gob.ar/wp-content/uploads/2019/09/BALLE-013.jpg">
+            <img src="https://i.ytimg.com/vi/FtD7hBacnTo/maxresdefault.jpg">
+            <img src="https://pxc.cdn.ellitoral.com.ar/litoral/012020/1579403690965.jpg">
+            <img src="https://i.ytimg.com/vi/AxN0TkorWFU/maxresdefault.jpg ">
+            <img src="https://agenfor.com.ar/wp-content/uploads/2019/12/Portada-1.png">
+            <img src="https://i.ytimg.com/vi/Fh15x7BkvJ4/maxresdefault.jpg">
+            <img src="https://gentilicios.de/wp-content/uploads/2020/10/la-pampa-min.png">
+            <img src="https://gentilicios.de/wp-content/uploads/la-rioja.png">
+            <img src="https://i.ytimg.com/vi/v5H9V7ZaJVE/maxresdefault.jpg">
+            <img src="https://misiones.gob.ar/wp-content/uploads/2022/10/web-portada.jpg">
+            <img src="https://volemos.nyc3.cdn.digitaloceanspaces.com/img/ciudades/social/neuquen.jpg">
+            <img src="https://i.ytimg.com/vi/0uKhaNnm914/maxresdefault.jpg">
+            <img src="https://i.ytimg.com/vi/wxCNnAuvO8I/maxresdefault.jpg">
+            <img src="https://i.ytimg.com/vi/UhXwtmuuiQs/maxresdefault.jpg">
+            <img src="https://i.ytimg.com/vi/PFEXmdZacP4/maxresdefault.jpg">
+            <img src="https://laprensadesantacruz.info/wp-content/uploads/2021/07/turismo.jpg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Santa_Fe%2C_Argentina_2019_%28letras%29.jpg">
+            <img src="https://gentilicios.de/wp-content/uploads/2020/10/santiago-del-esterp-min.png">
+            <img src="https://i.ytimg.com/vi/Iu9sYWxMOGU/maxresdefault.jpg">
+            <img src="https://i.ytimg.com/vi/Jfef6b9g0uk/maxresdefault.jpg">
+</div>
+
+
+        </div>
+          </section>
+</main>
+
+<footer class="pie_de_pagina">
+  <h1>Contactanos en nuestras Redes Sociales</h1>
+  <section>
+    <picture>
+      <a href="https://www.instagram.com/accounts/login/"
+        ><img
+          class="rotate-center"
+          src="./Logo/instagram-logo.png"
+          alt="Visitanos en Instagram"
+      /></a>
+      <a href="https://es-la.facebook.com/"
+        ><img
+          class="rotate-center"
+          src="./Logo/facebook-logo.png"
+          alt="Visitanos en Facebook"
+      /></a>
+      <a
+        href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D"
+        ><img
+          class="rotate-center"
+          src="./Logo/twitter-logo.png"
+          alt="Visitanos en Twitter"
+      /></a>
+      <a href="https://web.whatsapp.com/"
+        ><img
+          class="rotate-center"
+          src="./Logo/whatsapp-logo.png"
+          alt="Envianos un Whatsapp"
+      /></a>
+      <a href="https://www.gmail.com"
+        ><img
+          class="rotate-center"
+          src="./Logo/gmail-logo.png"
+          alt="Envianos un Correo"
+      /></a>
+    </picture>
+  </section>
+  <p>Mega Baires Tour ® - 2023</p>
+</footer>
+</body>
+</html>
