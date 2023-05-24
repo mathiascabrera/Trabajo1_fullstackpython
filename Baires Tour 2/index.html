@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Estilos/style.css" />
+    <link rel="stylesheet" href="./estilos/style.css" />
     <link
       rel="stylesheet"
       href="./estilos/tablet.css"
@@ -20,42 +20,48 @@
   <body class="container_body">
     <header class="encabezado">
       <picture>
-        <img class="float" src="./Logo/BairesTour.png" alt="Logo BairesTour" />
+        <img class="float" src="./logo/bairesTour.png" alt="Logo BairesTour" />
       </picture>
       <nav>
-        <a href="Destinos.html">Destinos</a>
+        <a href="destinos.html">Destinos</a>
         <a href="encomiendas.html">Encomiendas</a>
         <a href="contacto.html">Contacto</a>
       </nav>
     </header>
     <main class="menu">
-      <section>
+      <section class="carrusel">
         <picture class="slider-container">
           <img
-            class="slider-item"
-            src="./Imagenes/Bariloche.jpg"
+            class="slider-item mySlides"
+            src="./imagenes/bariloche.jpg"
             alt="Paisaje de Bariloche"
           />
           <img
-            class="slider-item"
-            src="./Imagenes/Corrientes.jpg"
+            class="slider-item mySlides"
+            src="./imagenes/corrientes.jpg"
             alt="Paisaje de Corrientes"
           />
           <img
-            class="slider-item"
-            src="./Imagenes/Formosa.jpg"
+            class="slider-item mySlides"
+            src="./imagenes/formosa.jpg"
             alt="Paisaje de Formosa"
           />
           <img
-            class="slider-item"
-            src="./Imagenes/Misiones.jpg"
+            class="slider-item mySlides"
+            src="./imagenes/misiones.jpg"
             alt="Paisaje de Misiones"
           />
           <img
-            class="slider-item"
-            src="./Imagenes/Ushuaia.jpg"
+            class="slider-item mySlides"
+            src="./imagenes/ushuaia.jpg"
             alt="Paisaje de Ushuaia"
           />
+          <button class="w3-button w3-display-left" onclick="plusDivs(-1)">
+            &#10094;
+          </button>
+          <button class="w3-button w3-display-right" onclick="plusDivs(+1)">
+            &#10095;
+          </button>
         </picture>
       </section>
 
@@ -64,7 +70,7 @@
         <div class="card">
           <figure>
             <img
-              src="./Imagenes/Mar_del_Plata1.jpg"
+              src="./imagenes/marDelPlata.jpg"
               alt="Paisaje de Mar del Plata"
             />
           </figure>
@@ -77,7 +83,7 @@
 
         <div class="card">
           <figure>
-            <img src="./Imagenes/Calafate.jpg" alt="Paisaje de Calafate" />
+            <img src="./imagenes/calafate.jpg" alt="Paisaje de Calafate" />
           </figure>
           <div class="contenido">
             <h3>¡Viajá a Calafate!</h3>
@@ -88,10 +94,7 @@
 
         <div class="card">
           <figure>
-            <img
-              src="./Imagenes/El-Durazno-Cordoba.png"
-              alt="Paisaje de Cordoba"
-            />
+            <img src="./imagenes/cordoba.png" alt="Paisaje de Cordoba" />
           </figure>
           <div class="contenido">
             <h3>¡Viajá a El Durazno!</h3>
@@ -109,37 +112,38 @@
           <a href="https://www.instagram.com/accounts/login/"
             ><img
               class="rotate-center"
-              src="./Logo/instagram-logo.png"
+              src="./logo/instagram-logo.png"
               alt="Visitanos en Instagram"
           /></a>
           <a href="https://es-la.facebook.com/"
             ><img
               class="rotate-center"
-              src="./Logo/facebook-logo.png"
+              src="./logo/facebook-logo.png"
               alt="Visitanos en Facebook"
           /></a>
           <a
             href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D"
             ><img
               class="rotate-center"
-              src="./Logo/twitter-logo.png"
+              src="./logo/twitter-logo.png"
               alt="Visitanos en Twitter"
           /></a>
           <a href="https://web.whatsapp.com/"
             ><img
               class="rotate-center"
-              src="./Logo/whatsapp-logo.png"
+              src="./logo/whatsapp-logo.png"
               alt="Envianos un Whatsapp"
           /></a>
           <a href="https://www.gmail.com"
             ><img
               class="rotate-center"
-              src="./Logo/gmail-logo.png"
+              src="./logo/gmail-logo.png"
               alt="Envianos un Correo"
           /></a>
         </picture>
       </section>
       <p>Mega Baires Tour ® - 2023</p>
     </footer>
+    <script src="./js/index.js"></script>
   </body>
 </html>
